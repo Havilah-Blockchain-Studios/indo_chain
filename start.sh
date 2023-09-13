@@ -1,3 +1,3 @@
 #!/bin/bash
 docker-compose stop
-docker-compose -f master.yml up -d
+docker-compose -f start.yml up -d
