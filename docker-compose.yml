@@ -45,7 +45,7 @@ services:
     command:
       - --datadir=/consensus/beacondata
       # No peers to sync with in this testnet, so setting to 0
-      - --p2p-host-ip=167.86.87.186
+      - --p2p-host-ip=5.189.176.210
       - --min-sync-peers=0
       - --genesis-state=/consensus/genesis.ssz
       #- --bootstrap-node=\
