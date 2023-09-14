@@ -10,6 +10,11 @@ services:
       - --http.addr=0.0.0.0
       - --http.corsdomain=*
       - --http.rpcprefix=/
+      - --ws
+      - --ws.api=eth,net,web3,txpool,debug
+      - --ws.addr=0.0.0.0
+      - --ws.corsdomain=*
+      - --ws.rpcprefix=/
       - --authrpc.vhosts=*
       - --authrpc.addr=0.0.0.0
       - --authrpc.jwtsecret=/execution/jwtsecret
@@ -31,6 +36,7 @@ services:
       - 8545:8545
       - 30303:30303
       - 30301:30301
+      - 3334:3334
     volumes:
       - ./execution:/execution
       - ./execution/geth_password.txt:/execution/geth_password.txt
