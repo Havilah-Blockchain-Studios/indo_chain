@@ -13,7 +13,7 @@ services:
       - --ws
       - --ws.api=eth,net,web3,txpool,debug
       - --ws.addr=0.0.0.0
-      - --ws.corsdomain=*
+      - --ws.origins=*
       - --ws.rpcprefix=/
       - --authrpc.vhosts=*
       - --authrpc.addr=0.0.0.0
