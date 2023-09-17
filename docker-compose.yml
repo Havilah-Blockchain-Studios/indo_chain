@@ -68,7 +68,7 @@ services:
       - --accept-terms-of-use
       - --jwt-secret=/execution/jwtsecret
       - --suggested-fee-recipient=0x123463a4b065722e99115d6c222f267d9cabb524
-      - --peer=/ip4/167.86.87.186/tcp/13000/p2p/16Uiu2HAm2kYPX2vqkXnRDoUYyZc6edHrM7ofC19KjY2TvENUESt7
+      - --peer=/ip4/167.86.87.186/tcp/13000/p2p/16Uiu2HAm7fxmhkgN8zedZMqhdtbN5b8qVsCVCjvApFyjW1vgcHnj
     depends_on:
       geth:
         condition: service_started
