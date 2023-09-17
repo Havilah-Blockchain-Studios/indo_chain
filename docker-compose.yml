@@ -51,9 +51,9 @@ services:
     command:
       - --datadir=/consensus/beacondata
       # No peers to sync with in this testnet, so setting to 0
-      - --p2p-host-ip=5.189.176.210
+      - --p2p-local-ip=0.0.0.0
       - --min-sync-peers=0
-      - --genesis-state=/consensus/genesis.ssz
+      #- --genesis-state=/consensus/genesis.ssz
       #- --bootstrap-node=\
       # The chain configuration file used for setting up Prysm
       - --chain-config-file=/consensus/config.yml
@@ -66,7 +66,7 @@ services:
       - --accept-terms-of-use
       - --jwt-secret=/execution/jwtsecret
       - --suggested-fee-recipient=0x123463a4b065722e99115d6c222f267d9cabb524
-      #- --peer=/ip4/172.19.0.3/tcp/13000/p2p/16Uiu2HAmHQV1hKG4iUwu4HKpoy3ird1coDNGrK46E3bB3ttYZDLh
+      - --peer=/ip4/167.86.87.186/tcp/13000/p2p/16Uiu2HAm2kYPX2vqkXnRDoUYyZc6edHrM7ofC19KjY2TvENUESt7
     depends_on:
       geth:
         condition: service_started
