@@ -53,7 +53,8 @@ services:
       # No peers to sync with in this testnet, so setting to 0
       - --p2p-local-ip=0.0.0.0
       - --min-sync-peers=0
-      - --genesis-beacon-api-url=http://167.86.87.186:13000
+      - --checkpoint-sync-url=http://167.86.87.186:3500
+      - --genesis-beacon-api-url=http://167.86.87.186:3500
       #- --genesis-state=/consensus/genesis.ssz
       #- --bootstrap-node=\
       # The chain configuration file used for setting up Prysm
